@@ -12,7 +12,7 @@ int main(){
 	/* Algoritma : Procedure yang isi bodynya call thd semua feature yang ada */
 	for (;;){
 		system("cls");
-		 //lakukan clear screen;
+//		 //lakukan clear screen;
 		CreateDate (&D1);
 		printf ("\nHasil CreateDate (&D1), maka D1 bernilai : ");
 		PrintObj (D1);
@@ -27,7 +27,7 @@ int main(){
 		DateBefore (D2);
 		printf("\n\n");
 		//dan seterusnya uji semua modul yang ada di file body 
-		
+//		
 		printf("Menggunakan perintah NextDate (D2), Setelah Tanggal ");
 		PrintObj(D2);
 		NextDate (D2);
@@ -35,7 +35,7 @@ int main(){
 		//spesification-nya (date.cpp) dengan cara memanggil dari driver 
 		//(modul main) ini
 		ReadDate (&D3);
-		//tampilkan D2
+//		tampilkan D2
 		printf("Setelah Perintah ReadDate(&D3) maka D3 Bernilai :");
 		PrintObj(D2);
 		printf("\n\n");
@@ -51,5 +51,6 @@ int main(){
 		if (lagi == 't' || lagi == 'T')
 		break;
 	}
+		
 	return 0;
 }

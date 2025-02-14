@@ -122,7 +122,7 @@ void DateBefore (date D){
 			printf (" adalah Tanggal %d/%d/%d\n", 31, 12, GetThn(D) - 1);
 		}
 		else if(GetBln(D) == 3){
-			printf(" adalah Tanggal %d/%d/%d\n",(isKabisat? 29 : 28), 2, GetThn(D));
+			printf(" adalah Tanggal %d/%d/%d\n",(isKabisat(D)? 29 : 28), 2, GetThn(D));
 		}
 		else{
 			printf(" adalah Tanggal %d/%d/%d\n",(((GetBln(D) == 2)|| (GetBln(D) == 4)||(GetBln(D) == 6)||(GetBln(D) == 8)||(GetBln(D) == 9)|| (GetBln(D) == 11))? 31 : 30), GetBln(D) - 1, GetThn(D));
