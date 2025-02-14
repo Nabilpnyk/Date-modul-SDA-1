@@ -68,10 +68,10 @@ int getInt(const char *prompt) {
 /****** Kelompok Interaksi dengan I/O device, BACA/TULIS ******/
 /* Membentuk DATE dari iTgl, iBln dan iThn yang dibaca dari keyboard */
 void ReadDate (date * D){
-	
+	printf("Masukkan Nilai Date!\n");
 	(* D).Tgl = getInt("Tanggal : ");
 	(* D).Bln = getInt("Bulan : ");
-	(* D).Thn = getInt("Tahun ");
+	(* D).Thn = getInt("Tahun :");
 	if (! isValid(* D))
 	{
 		printf ("Data yang anda masukkan tidak valid ! jadi di reset\n");

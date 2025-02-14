@@ -21,31 +21,35 @@ int main(){
 		//tampilkan D2
 		printf("Setelah Perintah ReadDate(&D2) maka D2 Bernilai :");
 		PrintObj(D2);
-		
+		printf("\n\n");
 		printf("Menggunakan perintah DateBefore (D2), Sebelum Tanggal ");
 		PrintObj(D2);
 		DateBefore (D2);
+		printf("\n\n");
 		//dan seterusnya uji semua modul yang ada di file body 
 		
 		printf("Menggunakan perintah NextDate (D2), Setelah Tanggal ");
 		PrintObj(D2);
 		NextDate (D2);
+		printf("\n\n");
 		//spesification-nya (date.cpp) dengan cara memanggil dari driver 
 		//(modul main) ini
 		ReadDate (&D3);
 		//tampilkan D2
 		printf("Setelah Perintah ReadDate(&D3) maka D3 Bernilai :");
 		PrintObj(D2);
+		printf("\n\n");
 		
 		printf("Menggunakan perintah DifferenceDate (D2, D3), Selisih antara ");
 		PrintObj(D2);
-		printf(" dengan ");
+		printf("dengan ");
 		PrintObj(D3);
 		DifferenceDate (D2, D3);
-		
+		printf("\n\n");
 		printf("Coba Lagi ? (y / n)");
-		lagi = getchar();
-		if ((lagi != 'y') || (lagi != 'Y'))
-			return 0;
+		lagi = getch();
+		if (lagi == 't' || lagi == 'T')
+		break;
 	}
+	return 0;
 }
