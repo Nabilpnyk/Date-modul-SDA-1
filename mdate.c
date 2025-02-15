@@ -12,6 +12,7 @@ int main(){
 	/* Algoritma : Procedure yang isi bodynya call thd semua feature yang ada */
 	for (;;){
 		system("cls");
+		printf("Assalamualaikum semua....\n");
 //		 //lakukan clear screen;
 		CreateDate (&D1);
 		printf ("\nHasil CreateDate (&D1), maka D1 bernilai : ");
