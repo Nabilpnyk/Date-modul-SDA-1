@@ -8,11 +8,12 @@
 int main(){
 	 date D1, D2, D3, D4;
 	 char lagi = 'y';
-
+	
 	/* Algoritma : Procedure yang isi bodynya call thd semua feature yang ada */
 	for (;;){
 		system("cls");
 //		 //lakukan clear screen;
+		printf("\nAssalamualaikum\n");
 		CreateDate (&D1);
 		printf ("\nHasil CreateDate (&D1), maka D1 bernilai : ");
 		PrintObj (D1);
